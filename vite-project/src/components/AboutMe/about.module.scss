@@ -1,0 +1,39 @@
+.container {
+  padding: 30px 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+
+    color: var(--title-1-color);
+
+    font-weight: bold;
+    font-size: 1.7rem;
+
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 768px) {
+  .container {
+    h2 {
+      font-size: clamp(1.7rem, 1.446rem + 0.947vw, 1.9rem);
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 1024px;
+    margin-inline: auto;
+
+    margin-top: clamp(0rem, -3.77rem + 7.843vw, 1.25rem);
+
+    h2 {
+      font-size: clamp(1.9rem, 1.598rem + 0.627vw, 2rem);
+    }
+  }
+}

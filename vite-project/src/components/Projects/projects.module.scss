@@ -1,0 +1,23 @@
+.section {
+  padding: 30px 0px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 40px;
+}
+
+.h2 {
+    display: flex;
+    justify-content: center;
+
+    color: var(--title-1-color);
+
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+
+.ul {
+    display: flex;
+
+}
