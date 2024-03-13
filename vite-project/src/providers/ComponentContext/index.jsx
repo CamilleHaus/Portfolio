@@ -6,7 +6,8 @@ export const ComponentContext = createContext({});
 export const ComponentProvider = ({ children }) => {
 
   const aboutMeSection = useRef(null);
-  const footerSection = useRef(null)
+  const footerSection = useRef(null);
+  const projectsSection = useRef(null);
 
   const scrollAboutMeSection = () => {
     if (aboutMeSection.current) {
@@ -26,7 +27,16 @@ export const ComponentProvider = ({ children }) => {
     }
   };
 
+  const scrollProjectsSection = () => {
+    if (projectsSection.current) {
+      window.scrollTo({
+        top: projectsSection.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <ComponentContext.Provider value={{aboutMeSection, scrollAboutMeSection, footerSection, scrollFooterSection}}>{children}</ComponentContext.Provider>
+    <ComponentContext.Provider value={{aboutMeSection, scrollAboutMeSection, footerSection, scrollFooterSection, projectsSection, scrollProjectsSection}}>{children}</ComponentContext.Provider>
   );
 };

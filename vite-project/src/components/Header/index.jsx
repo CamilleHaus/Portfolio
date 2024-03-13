@@ -4,7 +4,7 @@ import AboutMe from "../AboutMe";
 import { ComponentContext } from "../../providers/ComponentContext";
 
 const Header = () => {
-  const { scrollAboutMeSection, scrollFooterSection } =
+  const { scrollAboutMeSection, scrollFooterSection, scrollProjectsSection } =
     useContext(ComponentContext);
 
   return (
@@ -14,7 +14,7 @@ const Header = () => {
           <button onClick={() => scrollAboutMeSection()}>
             <li className="list">Sobre mim</li>
           </button>
-          <button>
+          <button onClick={() => scrollProjectsSection()}>
             <li className="list">Projetos</li>
           </button>
           <button onClick={() => scrollFooterSection()}>Contato</button>
