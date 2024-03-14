@@ -1,6 +1,8 @@
 import { projects } from "../../data/projects.js";
 import ProjectCard from "./ProjectCard/index.jsx";
 import styles from "../Projects/projects.module.scss";
+import { useContext } from "react";
+import { ComponentContext } from "../../providers/ComponentContext/index.jsx";
 
 const Projects = () => {
   const { projectsSection } = useContext(ComponentContext);

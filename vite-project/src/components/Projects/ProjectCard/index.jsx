@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
           </div>
           <div className={styles.description}>
             <p className={styles.p}>{project.description}</p>
-            <a href={project.github}>Veja meu codigo aqui!</a>
+            <a href={project.github} target="_blank">Veja meu codigo aqui!</a>
           </div>
         </div>
       </li>

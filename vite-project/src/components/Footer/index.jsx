@@ -17,9 +17,6 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/camillehaus/" target="_blank">
             <FaLinkedin />
           </a>
-          <a href="https://w.app/mwJKa6" target="_blank">
-            <FaWhatsapp />
-          </a>
           <a href="https://github.com/CamilleHaus" target="_blank">
             <FiGithub />
           </a>

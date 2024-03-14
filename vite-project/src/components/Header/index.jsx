@@ -1,6 +1,5 @@
 import { useContext, useRef } from "react";
 import "../Header/header.module.scss";
-import AboutMe from "../AboutMe";
 import { ComponentContext } from "../../providers/ComponentContext";
 
 const Header = () => {

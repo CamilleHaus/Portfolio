@@ -19,10 +19,23 @@
 
 .ul {
     display: flex;
+    flex-direction: column;
+
+    width: 87%;
 
 }
 
 @media (min-width: 769px) {
 
+.section {
+  max-width: 1024px;
+  margin-inline: auto;
 
+}
+
+.ul {
+  display: flex;
+  
+  margin-left: 35px;
+}
 }
